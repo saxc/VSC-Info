@@ -1,23 +1,26 @@
 {
   "name": "vsc-info",
   "displayName": "VSC-Info",
-  "description": "Shows the Current VS Code version in status bar.",
+  "description": "Shows the Current VS Code version in the status bar.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.95.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saxc/VSC-Info"
+  },
+  "license": "MIT",
+  "icon": "images/logo.drawio.png",
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "vsc-info.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    "commands": []
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
