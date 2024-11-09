@@ -2,7 +2,7 @@
   "name": "vsc-info",
   "publisher": "saxc",
   "displayName": "VSC-Info",
-  "description": "Shows the Current VS Code version in the status bar.",
+  "description": "Shows the current VS Code version in the status bar.",
   "version": "24.11.2",
   "engines": {
     "vscode": "^1.95.0"
