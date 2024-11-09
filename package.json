@@ -1,5 +1,6 @@
 {
   "name": "vsc-info",
+  "publisher": "saxc",
   "displayName": "VSC-Info",
   "description": "Shows the Current VS Code version in the status bar.",
   "version": "0.0.1",
