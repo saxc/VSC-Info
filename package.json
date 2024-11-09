@@ -3,7 +3,7 @@
   "publisher": "saxc",
   "displayName": "VSC-Info",
   "description": "Shows the current VS Code version in the status bar.",
-  "version": "24.11.2",
+  "version": "24.11.3",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -21,7 +21,13 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": []
+    "commands": [
+        {
+            "title": "Show infos",
+            "command": "vsc-info.showInfos",
+            "category": "VSC-Info"
+        }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
