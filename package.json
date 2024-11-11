@@ -3,7 +3,7 @@
     "publisher": "saxc",
     "displayName": "VSC-Info",
     "description": "The extensions show the current VS Code version in the status bar and can collect information about VS Code, extensions and the system.",
-    "version": "24.11.5",
+    "version": "24.11.6",
     "engines": {
         "vscode": "^1.95.0"
     },
