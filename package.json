@@ -1,51 +1,66 @@
 {
-  "name": "vsc-info",
-  "publisher": "saxc",
-  "displayName": "VSC-Info",
-  "description": "The extensions show the current VS Code version in the status bar and can collect information about VS Code, extensions and the system.",
-  "version": "24.11.4",
-  "engines": {
-    "vscode": "^1.95.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/saxc/VSC-Info"
-  },
-  "license": "MIT",
-  "icon": "images/logo.drawio.png",
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onStartupFinished"
-  ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-        {
-            "title": "Show infos",
-            "command": "vsc-info.showInfos",
-            "category": "VSC-Info"
-        }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "test": "vscode-test"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.95.0",
-    "@types/mocha": "^10.0.9",
-    "@types/node": "20.x",
-    "@typescript-eslint/eslint-plugin": "^8.10.0",
-    "@typescript-eslint/parser": "^8.7.0",
-    "eslint": "^9.13.0",
-    "typescript": "^5.6.3",
-    "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
-  }
+    "name": "vsc-info",
+    "publisher": "saxc",
+    "displayName": "VSC-Info",
+    "description": "The extensions show the current VS Code version in the status bar and can collect information about VS Code, extensions and the system.",
+    "version": "24.11.5",
+    "engines": {
+        "vscode": "^1.95.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/saxc/VSC-Info"
+    },
+    "license": "MIT",
+    "icon": "images/logo.drawio.png",
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "title": "Show All infos",
+                "command": "vsc-info.showAllInfos",
+                "category": "VSC-Info"
+            },
+            {
+                "title": "Show Editor infos",
+                "command": "vsc-info.showEditorInfos",
+                "category": "VSC-Info"
+            },
+            {
+                "title": "Show Extensions infos",
+                "command": "vsc-info.showExtensionsInfos",
+                "category": "VSC-Info"
+            },
+            {
+                "title": "Show System infos",
+                "command": "vsc-info.showSystemInfos",
+                "category": "VSC-Info"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.95.0",
+        "@types/mocha": "^10.0.9",
+        "@types/node": "20.x",
+        "@typescript-eslint/eslint-plugin": "^8.10.0",
+        "@typescript-eslint/parser": "^8.7.0",
+        "eslint": "^9.13.0",
+        "typescript": "^5.6.3",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.4.1"
+    }
 }
