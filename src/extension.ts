@@ -26,6 +26,9 @@ export function activate(context: vscode.ExtensionContext) {
     }),
     vscode.commands.registerCommand("vsc-info.showSystemInfos", () => {
       showData(getSystemObject());
+    }),
+    vscode.commands.registerCommand("vsc-info.showNetworkInfos", () => {
+      showData(getNetworkObject());
     })
   );
 }
@@ -61,9 +64,13 @@ function getSystemObject() {
     freemem: os.freemem(),
     hostname: os.hostname(),
     uptime: os.uptime(),
-    networkInterfaces: os.networkInterfaces(),
+    networkInterfaces: getNetworkObject(),
     userInfo: os.userInfo(),
   };
+}
+
+function getNetworkObject() {
+  return  os.networkInterfaces();
 }
 
 function showData(data: object) {
