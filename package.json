@@ -3,13 +3,13 @@
     "publisher": "saxc",
     "displayName": "VSC-Info",
     "description": "The extensions show the current editor version in the status bar and can collect information about the editor, extensions, and the system.",
-    "version": "25.11.1",
+    "version": "26.03.1",
     "engines": {
         "vscode": "^1.95.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/saxc/VSC-Info"
+        "url": "https://codeberg.org/saxc/VSC-Info"
     },
     "license": "MIT",
     "icon": "images/logo.drawio.png",
